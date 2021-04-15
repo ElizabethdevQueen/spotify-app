@@ -4,6 +4,7 @@ const APIController = (function () {
   
     // private methods
     const _getToken = async () => {
+      // spotify.com/documentation/general/guides/authorization-guide/ - client credential flow to get the token endpoint
       const result = await fetch("https://accounts.spotify.com/api/token", {
         method: "POST",
         headers: {
